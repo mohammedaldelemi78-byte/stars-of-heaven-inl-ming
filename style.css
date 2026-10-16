@@ -1,0 +1,54 @@
+html,body{ height: 100%; margin: 0;  padding: 0;}
+
+.item1{grid-area: header; background-color: burlywood;}
+
+.item2{grid-area: main; border-top: 10px groove burlywood; border-left: 10px groove burlywood; border-bottom: 10px groove burlywood;}
+
+.item3{grid-area: main2;border-top: 10px groove burlywood; border-left: 10px groove burlywood; border-bottom: 10px groove burlywood;}
+
+
+.item5{grid-area: sidebar; border: 10px; border-style: groove ; border-color: burlywood;}
+
+.item6{grid-area: footer;
+background-color: burlywood;}
+
+.container{ 
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 4fr 1fr 3fr;
+grid-template-rows: 1fr 5fr 1fr;
+grid-template-areas: 
+"header header header header" 
+"main main main sidebar"
+"footer footer footer footer";
+} 
+ .item2, .item3, p{font-size: 24px;}
+
+.container2{
+height:100vh;
+display:grid;
+grid-template-columns:3fr 1fr 2fr 3fr;
+grid-template-rows:1fr 5fr 1fr;
+grid-template-areas:
+"header header header header" 
+"main main2 main2 sidebar"
+"footer footer footer footer";} 
+
+h1{text-align: center;}
+
+table, th, td {border: 2px solid black;text-align: center;}   
+table{width: 100%; height: 100%; table-layout: fixed; border-collapse: collapse;}
+
+img{width: 220px; height: 160px;}
+ol {text-align: center;}
+.item5 h1{color: burlywood;}
+.item2, .item3{text-align: center;}
+
+.item5 nav li:hover:nth-child(1){color: red;
+    border-style : solid;
+}
+
+.item5 nav li:hover{color: rgb(231, 3, 238); 
+    border-style : solid;
+}
+
